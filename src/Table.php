@@ -21,11 +21,24 @@ class Table
     }
 
     /**
+     * 判断key是否存在
+     * 
+     * @param string $key
+     * @return bool
+     */
+    public function exist($key)
+    {
+        
+    }
+
+    /**
      * 获取key
-     * @param $key
+     * 
+     * @param string $key
+     * @param string $field
      * @return array
      */
-    function get($key)
+    function get($key, $field = null)
     {
     }
 
@@ -53,7 +66,7 @@ class Table
      * @param $key
      * @param $column
      * @param $incrby
-     * @return bool
+     * @return mixed
      */
     function incr($key, $column, $incrby = 1)
     {
@@ -64,6 +77,7 @@ class Table
      * @param $key
      * @param $column
      * @param $decrby
+     * @return mixed
      */
     function decr($key, $column, $decrby = 1)
     {
